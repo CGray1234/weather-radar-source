@@ -206,3 +206,5 @@ function updateWarningsInterval() {
 
   setInterval(updateWarnings, 1000);
 }
+
+updateWarningsInterval();
