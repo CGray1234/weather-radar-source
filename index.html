@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Radar</title>
+  </head>
+  <body>
+    <div id="map" style="width: 1000px; height: 500px;"></div>
+    <div style="padding-top: 505px; justify-content: center; flex-direction: row;" >
+      <label class="switch">
+        <input id="warningsEnabled" type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <div style="position: absolute; left: 65px; top: 515px;">Enable Warnings</div>
+
+    <img id="warningKey" src="https://opengeo.ncep.noaa.gov/geoserver/wwa/warnings/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=warnings&style=wrn_no_outline" style="background-color: white; position: absolute; top: 390px; visibility: hidden;">
+    <img src="https://opengeo.ncep.noaa.gov/geoserver/styles/reflectivity.png" style="background-color: white; position: absolute; top: 470px;">
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
